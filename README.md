@@ -1,2 +1,13 @@
 # Impact-of-the-COVID-19-Pandemic-on-Orthopedic-Surgeries-in-the-State-of-Rio-de-Janeiro.
 My Final Project to graduate from college
+
+ABSTRACT
+
+Due to the COVID-19 pandemic, governments had to prioritize the care of patients with COVID-19, and many “non-COVID-19” procedures ended up being affected. This study sought to assess the impacts of the pandemic on hospitalizations for the main type of elective procedure performed in the State of Rio de Janeiro, orthopedic procedures. The impact was evaluated according to patient characteristics, such as race, age, sex, and hospital outcome. From the final database with 161,250 patients extracted from the SIHSUS from 2016 to 2020, we concluded that the number of orthopedic hospitalizations decreased by 13% in 2020 compared to 2019, returning to the level of 2016. Most of them was male, self-declared brown and aged between 20-39 years. Such a decrease directly affects the patient queue and can end up leading to complications in the clinical picture of patients, in addition to the embarrassment of the long wait.
+
+CONCLUSION
+
+This study evaluated the impacts of the pandemic on hospitalizations for orthopedic procedures in the State of Rio de Janeiro over 5 years (2016-2020) using clinically relevant characteristics, such as race, age, gender, and hospital outcome.
+It is possible to conclude that the number of hospitalizations suffered a 13% reduction in orthopedic procedures in 2020 compared to 2019, returning to similar levels as in 2016. Although we had a decrease in the number of hospitalizations during 2020, the most representative groups remained throughout the period as being male patients, self-declared brown and aged between 20-39 years.
+The general decrease in the number of surgeries performed directly affects the patient queue, which at the time of the study had a maximum queue of 2 years. Such a delay may end up leading to complications in the clinical condition of the patients, in addition to the embarrassment of the long wait for the surgery. As a future study, we want to evaluate the impact of reducing surgeries in the patient queue. Finally, greater attention is expected from government officials to orthopedic hospitalizations in order to normalize the system, seeking to minimize the queue time for patients.
+The contribution of this work is in two respects. The first in relation to the contribution to the literature, since no evidence was found regarding the study of the impact of the pandemic on hospitalizations for orthopedic procedures in developing countries. And second, for contributing as inputs for decision makers regarding the planning of the hospital capacity of the SUS in the State of Rio de Janeiro in the following years.
