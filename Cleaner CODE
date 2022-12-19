@@ -1,0 +1,77 @@
+library(readr)
+library(dplyr)
+library(ggplot2)
+
+# Filtrando os dados
+dados_orto <- read_csv("C:/Users/phabi/Desktop/P.U.C. RJ/21.2/TCC/DADOS/sih_aih_proc_orto_clean_2016_2021.csv")
+dados_orto_filtrados <- dados_orto_filtrados %>%
+  select(sexo, val_tot, dias_perm, morte, raça, Ano, idade_real_anos, mes_inter) %>%
+  rename(custo = val_tot, tinternado = dias_perm, idade = idade_real_anos, mes = mes_inter) %>%
+  filter(idade >17, Ano <2021)
+
+# Usando os anos escolhidos
+#v_anos <- c(2016,2017,2018,2019,2020)
+# p_ano <- 2016
+# u_ano <- 2020
+table_ano <- dados_orto_filtrados %>%
+  distinct(dados_orto_filtrados$Ano)
+v_ano <- 0
+p_ano <- min(table_ano)
+u_ano <- max(table_ano)
+diff_ano <- u_ano - p_ano +1
+diff_ano
+for (i in 1:diff_ano){
+    v_ano[i] = p_ano-1+i 
+}
+v_ano
+
+# Numero de Internações em cada ano
+for (i in v_anos[1]:v_anos[length(v_anos)]) {
+  nam <- paste("inter_", i, sep = "")
+  assign(nam, dados_orto_filtrados %>%
+           filter(Ano == i) %>%
+           nrow())
+}
+
+# Número de mortes em cada ano
+for (i in v_anos[1]:v_anos[length(v_anos)]) {
+  nam <- paste("morte_", i, sep = "")
+  assign(nam, dados_orto_filtrados %>%
+           filter(morte == 1, Ano == i) %>%
+           nrow())
+}
+
+# Custo de cada ano
+# Cria dataframe de cada ano
+for (i in v_anos[1]:v_anos[length(v_anos)]) {
+  nam <- paste("ano_", i, sep = "")
+  assign(nam, dados_orto_filtrados %>%
+           filter(Ano == i)
+           )
+}
+
+# Custo de cada ano
+custo_2016 <- sum(ano_2016$custo)
+custo_2017 <- sum(ano_2017$custo)
+custo_2018 <- sum(ano_2018$custo)
+custo_2019 <- sum(ano_2019$custo)
+custo_2020 <- sum(ano_2020$custo)
+
+# Número de homens e mulheres por ano
+for(i in 2016:2020) { 
+  nam <- paste("homen_", i, sep = "")
+  assign(nam, dados_orto_filtrados %>%
+           filter(sexo == 1, Ano == i) %>%
+           nrow())
+}
+
+# Mulheres
+for(i in 2016:2020) { 
+  nam <- paste("mulher_", i, sep = "")
+  assign(nam, dados_orto_filtrados %>%
+           filter(sexo == 1, Ano == i) %>%
+           nrow())
+}
+
+v_mulher <- c(mulher_2016,mulher_2017,mulher_2018,mulher_2019,mulher_2020)
+
