@@ -15,7 +15,7 @@ dados_orto_filtrados <- dados_orto_filtrados %>%
    filter(Ano <2021)
 
 # Dividing the data by year
-no_16 <- dados_orto_filtrados %>%
+ano_16 <- dados_orto_filtrados %>%
    filter(Ano == 2016)
 ano_17 <- dados_orto_filtrados %>%
    filter(Ano == 2017)
