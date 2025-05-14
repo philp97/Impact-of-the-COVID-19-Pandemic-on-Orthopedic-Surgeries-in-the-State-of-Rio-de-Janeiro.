@@ -3,7 +3,7 @@ library(dplyr)
 library(ggplot2)
 
 # Filtrando os dados
-dados_orto <- read_csv("C:/Users/phabi/Desktop/P.U.C. RJ/21.2/TCC/DADOS/sih_aih_proc_orto_clean_2016_2021.csv")
+dados_orto <- read_csv("sih_aih_proc_orto_clean_2016_2021.csv")
 dados_orto_filtrados <- dados_orto %>%
   select(sexo, val_tot, dias_perm, morte, raça, Ano, idade_real_anos, mes_inter) %>%
   rename(custo = val_tot, tinternado = dias_perm, idade = idade_real_anos, mes = mes_inter) %>%
